@@ -26,14 +26,14 @@ def addcsv(filename,input_list):
 #we have all of the unfiltered titles from Pubmed and Google Scholar stored in 
 #csv files. add titles from each of the csv files to source_titles
 source_titles=[]
-addcsv('PUBMED_csv-homemadema-set.csv',source_titles)
-addcsv('PUBMED_csv-maskfiltra-set.csv',source_titles)
-addcsv('PUBMED_csv-repiratorr-set.csv',source_titles)
-addcsv('GOOGLESCHOLAR_cyclicflowFFR.csv',source_titles)
-addcsv('GOOGLESCHOLAR_fomitepotentialFFR.csv',source_titles)
-addcsv('GOOGLESCHOLAR_survivabilityFFR.csv',source_titles)
-addcsv('GOOGLESCHOLAR_transferefficiencyFFR.csv',source_titles)
-addcsv('GOOGLESCHOLAR_uvgidecontaminationFFR.csv',source_titles)
+addcsv('Data/PUBMED_csv-homemadema-set.csv',source_titles)
+addcsv('Data/PUBMED_csv-maskfiltra-set.csv',source_titles)
+addcsv('Data/PUBMED_csv-repiratorr-set.csv',source_titles)
+addcsv('Data/GOOGLESCHOLAR_cyclicflowFFR.csv',source_titles)
+addcsv('Data/GOOGLESCHOLAR_fomitepotentialFFR.csv',source_titles)
+addcsv('Data/GOOGLESCHOLAR_survivabilityFFR.csv',source_titles)
+addcsv('Data/GOOGLESCHOLAR_transferefficiencyFFR.csv',source_titles)
+addcsv('Data/GOOGLESCHOLAR_uvgidecontaminationFFR.csv',source_titles)
 
 
 #flatten list and count records. This only is for counting the number
@@ -42,7 +42,7 @@ database_titles=reduce(operator.concat,source_titles)
 information={'Records found through database searching':[len(database_titles)]}
 
 #add references from CDC sources
-addcsv('CDC_references.csv',source_titles)
+addcsv('Data/CDC_references.csv',source_titles)
 
 #flatten list and append titles from N95 decon
 source_titles=reduce(operator.concat,source_titles)

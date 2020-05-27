@@ -11,7 +11,7 @@ https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/
 https://www.n95decon.org/bibliography
 
 
-The file 'additional_sources.py' creates a list of titles from the n95 Decon website text
+The file 'additional_sources.py' creates a list of titles from the N95 Decon website text
 
 The file 'keywords.py' counts the titles from all sources before and after deleting duplicates
 

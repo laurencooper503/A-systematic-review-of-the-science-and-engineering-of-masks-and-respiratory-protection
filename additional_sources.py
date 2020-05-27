@@ -19,7 +19,7 @@ import re
 
 
 #N95 decon sources
-with open('N95DECON_bibliography.csv', newline='') as f:
+with open('Data/N95DECON_bibliography.csv', newline='') as f:
     reader = csv.reader(f)
     titles = [row for row in reader]
 
